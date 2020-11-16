@@ -1,0 +1,12 @@
+.services-item .icon i {
+  color: #ffc000;
+}
+
+.controls .active {
+  color: #ffc000!important;
+  border-color: #ffc000;
+}
+
+.services-item .services-content h3 a:hover {
+  color: #ffc000;
+}

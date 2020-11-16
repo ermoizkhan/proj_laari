@@ -1,0 +1,63 @@
+<!-- Header Area wrapper Starts -->
+<header id="header-wrap">
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="icon-menu"></span>
+        <span class="icon-menu"></span>
+        <span class="icon-menu"></span>
+      </button>
+      <a href="index.html" class="navbar-brand"><img src="assets/img/logo_new.png" alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+        <li class="nav-item active">
+          <a routerLink="/" routerLinkActive="active" class="nav-link" (click)="setPageTitle('Laari')">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/about" routerLinkActive="active" class="nav-link" (click)="setPageTitle('About')">
+            About Us
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/service" routerLinkActive="active" class="nav-link" (click)="setPageTitle('Service')">
+            Services
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/contact" routerLinkActive="active" class="nav-link" (click)="setPageTitle('Contact')">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Start -->
+  <ul class="onepage-nev mobile-menu">
+    <li>
+      <a routerLink="/" routerLinkActive="active" class="nav-link" (click)="setPageTitle('Laari')">Home</a>
+    </li>
+    <li>
+      <a routerLink="cmspage/about" routerLinkActive="active" class="nav-link" (click)="setPageTitle('About')">About Us</a>
+    </li>
+    <li>
+      <a routerLink="/service" routerLinkActive="active" class="nav-link" (click)="setPageTitle('Service')">Services</a>
+    </li>
+    <li>
+      <a routerLink="/contact" routerLinkActive="active" class="nav-link" (click)="setPageTitle('Contact')">Contact Us</a>
+    </li>
+  </ul>
+  <!-- Mobile Menu End -->
+</nav>
+<!-- Navbar End -->
+    </header>
+    <!-- Header Area wrapper End -->
+
+

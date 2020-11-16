@@ -1,0 +1,35 @@
+<div class="container">
+  <form  #contactForm="ngForm" (ngSubmit)="sendVerifyCode(contactForm)" >
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-md-offset-3">
+        <div class="numbersection">
+          <h4>Please Enter Your Number to Verify</h4>
+          <h5 style="font-size: 18px;">We’ll text a code to verify your phone</h5>
+          <div class="form-group">
+            <label class="control-label">Phone Number</label>
+            <!-- <input type="text" ng2TelInput /> -->
+            <ngx-intl-tel-input ngModel [cssClass]="'custom'"
+              [preferredCountries]="preferredCountries"
+              [enableAutoCountrySelect]="true"
+              [enablePlaceholder]="true"
+              [searchCountryFlag]="true"
+              [searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]"
+              [selectFirstCountry]="false"
+              [selectedCountryISO]="CountryISO.UnitedStates"
+              [maxLength]="15"
+              [tooltipField]="TooltipLabel.Name"
+              [phoneValidation]="true"
+              [separateDialCode]="separateDialCode"
+              name="phone" (countryChange)="changeCountry($event)">
+            </ngx-intl-tel-input>
+          </div>
+          <div id="recaptcha-container"></div>
+          <p id="p" class="error"></p>
+          <button class="btn btn-primary btn-block btn-lg" type="submit">NEXT</button>
+        </div>
+
+
+      </div>
+    </div>
+  </form>
+</div>
