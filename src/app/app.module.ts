@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// import { AgmCoreModule } from '@agm/core';
 import { CmspageModule } from './cmspage/cmspage.module';
 import { AppRoutingModule } from './app-routing.module';
 // import {Ng2TelInputModule} from 'ng2-tel-input';
@@ -13,6 +14,8 @@ import { ServiceComponent } from './service/service.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactusComponent } from './contactus/contactus.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 @NgModule({
@@ -23,17 +26,22 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomepageComponent,
     BannerComponent,
     PageNotFoundComponent,
-    ServiceComponent
+    ServiceComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyBQ1A0VGQKW73vUVXDlX_eIXrzo-t-eGDY'
+    // }),
     CmspageModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
     NgxIntlTelInputModule,
     // Ng2TelInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
